@@ -130,7 +130,7 @@
 
 /datum/chemical_reaction/drink/beepsky_smash
 	results = list(/datum/reagent/consumable/ethanol/beepsky_smash = 5)
-	required_reagents = list(/datum/reagent/consumable/limejuice = 2, /datum/reagent/consumable/ethanol/quadruple_sec = 2, /datum/reagent/iron = 1)
+	required_reagents = list(/datum/reagent/consumable/limejuice = 2)
 	reaction_tags = REACTION_TAG_DRINK | REACTION_TAG_EASY | REACTION_TAG_OTHER
 
 /datum/chemical_reaction/drink/doctor_delight
