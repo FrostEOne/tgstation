@@ -105,8 +105,8 @@
 	required_reagents = list(/datum/reagent/consumable/ethanol/vodka = 2, /datum/reagent/consumable/orangejuice = 1)
 
 /datum/chemical_reaction/drink/bloody_mary
-	results = list(/datum/reagent/consumable/ethanol/bloody_mary = 4)
-	required_reagents = list(/datum/reagent/consumable/ethanol/vodka = 1, /datum/reagent/consumable/tomatojuice = 2, /datum/reagent/consumable/limejuice = 1)
+	results = list(/datum/reagent/consumable/ethanol/bloody_mary = 1)
+	required_reagents = list(/datum/reagent/blood = 1)
 	reaction_tags = REACTION_TAG_DRINK | REACTION_TAG_EASY | REACTION_TAG_OTHER
 
 /datum/chemical_reaction/drink/gargle_blaster
@@ -130,7 +130,7 @@
 
 /datum/chemical_reaction/drink/beepsky_smash
 	results = list(/datum/reagent/consumable/ethanol/beepsky_smash = 5)
-	required_reagents = list(/datum/reagent/consumable/limejuice = 2)
+	required_reagents = list(/datum/reagent/consumable/limejuice = 2, /datum/reagent/consumable/ethanol/quadruple_sec = 2, /datum/reagent/iron = 1)
 	reaction_tags = REACTION_TAG_DRINK | REACTION_TAG_EASY | REACTION_TAG_OTHER
 
 /datum/chemical_reaction/drink/doctor_delight
