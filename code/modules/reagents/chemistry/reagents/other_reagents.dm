@@ -2573,6 +2573,13 @@
 	taste_description = "bananas"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
+/datum/reagent/zebra_powder
+	name = "Zebra Powder"
+	description = "Just add water!"
+	color = "#e7e7e7"
+	taste_description = "stripes"
+	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
+
 /datum/reagent/plasma_oxide
 	name = "Hyper-Plasmium Oxide"
 	description = "Compound created deep in the cores of demon-class planets. Commonly found through deep geysers."

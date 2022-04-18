@@ -586,6 +586,27 @@
 			M.vomit(blood = TRUE, stun = TRUE) //not having a redo of itching powder (hopefully)
 	new /mob/living/carbon/human/species/monkey(location, TRUE)
 
+//zebra powder heehoo
+/datum/chemical_reaction/zebra_powder
+	results = list(/datum/reagent/zebra_powder = 50)
+	required_reagents = list(/datum/reagent/colorful_reagent/powder/black/crayon=1, /datum/reagent/colorful_reagent/powder/white/crayon=1)
+	reaction_flags = REACTION_INSTANT
+	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_UNIQUE
+
+/datum/chemical_reaction/zebra
+	required_reagents = list(/datum/reagent/zebra_powder = 50, /datum/reagent/water = 1)
+	mix_message = "<span class='danger'>Expands into a black and white mass before shaping itself into a zebra!.</span>"
+
+/datum/chemical_reaction/zebra/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
+	var/mob/living/carbon/M = holder.my_atom
+	var/location = get_turf(M)
+	if(istype(M, /mob/living/carbon))
+		if(ismonkey(M))
+			M.gib()
+		else
+			M.vomit(blood = TRUE, stun = TRUE) //not having a redo of itching powder (hopefully)
+	new /mob/living/simple_animal/friendly/zebra(location, TRUE)
+
 //water electrolysis
 /datum/chemical_reaction/electrolysis
 	results = list(/datum/reagent/oxygen = 1.5, /datum/reagent/hydrogen = 3)

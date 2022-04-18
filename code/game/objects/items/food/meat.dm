@@ -486,7 +486,7 @@
 	icon_state = "sashimi"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 10, /datum/reagent/consumable/capsaicin = 9, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("fish" = 1, "hot peppers" = 1)
-	foodtypes = SEAFOOD 
+	foodtypes = SEAFOOD
 	w_class = WEIGHT_CLASS_TINY
 	//total price of this dish is 20 and a small amount more for soy sauce, all of which are available at the orders console
 	venue_value = FOOD_PRICE_CHEAP
@@ -969,6 +969,13 @@
 /obj/item/food/meat/slab/chicken/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/swabable, CELL_LINE_TABLE_CHICKEN, CELL_VIRUS_TABLE_GENERIC_MOB)
+
+/obj/item/food/meat/slab/zebra
+	name = "zebra meat"
+	desc = "Wait, their meat is black and white too?"
+	icon = 'zebrameat'
+	tastes = list("black stripes" = 1, "white stripes" = 1)
+	foodtypes = RAW | MEAT | GROSS
 ////////////////////////////////////// MEAT STEAKS ///////////////////////////////////////////////////////////
 
 /obj/item/food/meat/steak
